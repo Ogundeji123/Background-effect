@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gradient Background</title>
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                font-size: 24px;
+                text-align: center;
+                background: linear-gradient(-45deg, red, orange, yellow, green, blue, purple, pink, brown, indigo);
+                background-size: 400% 400%;
+                animation:gradientBG 6s ease infinite;
+            }
+            @keyframes gradientBG{
+                0%{ background-position: 0% 50%;}
+                50% {background-position:100% 50%;}
+                100% { background-position: 0% 50%;}
+            }
+        </style>
+    </head>
+    <body>
+        Gradient Background Effect
+    </body>
+</html>
